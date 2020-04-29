@@ -1,8 +1,163 @@
-@import '_config.css';
-@import '_header.css';
-@import '_banner.css';
-@import '_podcast.css';
-@import '_about.css';
+:root {
+  --primary-color: #7158e2;
+  --gray-color: #dfe6ee;
+  --space: 10rem;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary-color);
+  padding: 10px 1.5rem;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+body {
+  font-family: 'Gidole', sans-serif;
+}
+
+/* top-header styles */
+.top-header {
+  background: var(--gray-color);
+  padding: 13px;
+  text-align: center;
+}
+
+.top-header h3 {
+  font-size: 1.4rem;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: end;
+  padding: 1rem 2rem;
+}
+
+.navbar li {
+  float: left;
+  color: var(--primary-color);
+}
+
+.navbar li + li {
+  margin-left: 2rem;
+}
+
+.navbar li > a {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #ccc;
+}
+/* end top-header styles */
+
+/* banner styles */
+.banner {
+  display: grid;
+  grid-template-columns: auto 35%;
+  gap: 4rem;
+  align-items: center;
+  padding: 0 var(--space) 7rem;
+}
+
+.banner .content {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1.5rem;
+}
+/* end banner styles */
+
+/* podcast styles */
+.podcast-section {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+  background: var(--gray-color);
+  padding: 4rem var(--space);
+}
+
+.podcast-section h2 {
+  padding: 1rem;
+}
+
+.podcast-section .tabs {
+  justify-self: center;
+}
+
+.podcast-section .tabs li {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  float: left;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 5px 1.3rem;
+}
+
+.podcast-section .tabs li + li {
+  margin-left: 4rem;
+}
+
+.podcast-section .tabs li .fa-mug-hot {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.podcast-section .tabs li.active .fa-mug-hot {
+  display: block;
+}
+
+.podcast-section .tabs li.active,
+.podcast-section .tabs li:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.podcast-section .podcast {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+/* end podcast styles */
 
 /* about styles */
 .about {
@@ -31,4 +186,4 @@
 .main-footer p {
   line-height: 1.5;
 }
-/* footer styles */
+/* end footer styles */
