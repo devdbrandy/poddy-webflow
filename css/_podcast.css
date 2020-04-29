@@ -1,0 +1,51 @@
+.podcast-section {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1rem;
+  background: var(--gray-color);
+  padding: 4rem var(--space);
+}
+
+.podcast-section h2 {
+  padding: 1rem;
+}
+
+.podcast-section .tabs {
+  justify-self: center;
+}
+
+.podcast-section .tabs li {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  float: left;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 5px 1.3rem;
+}
+
+.podcast-section .tabs li + li {
+  margin-left: 4rem;
+}
+
+.podcast-section .tabs li .fa-mug-hot {
+  display: none;
+  font-size: 1.5rem;
+}
+
+.podcast-section .tabs li.active .fa-mug-hot {
+  display: block;
+}
+
+.podcast-section .tabs li.active,
+.podcast-section .tabs li:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  cursor: pointer;
+}
+
+.podcast-section .podcast {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}

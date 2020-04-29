@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Gidole';
+  src: url('gidole-regular-webfont.woff2') format('woff2'),
+    url('gidole-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gidolinya';
+  src: url('gidolinya-regular-webfont.woff2') format('woff2'),
+    url('gidolinya-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,34 @@
+@import '_config.css';
+@import '_header.css';
+@import '_banner.css';
+@import '_podcast.css';
+@import '_about.css';
+
+/* about styles */
+.about {
+  display: grid;
+  grid-template-columns: 20% auto;
+  gap: 3rem;
+  align-items: center;
+  padding: 3rem var(--space);
+}
+/* end about styles */
+
+/* footer styles */
+.main-footer {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 4rem var(--space);
+  background: var(--gray-color);
+}
+
+.main-footer h3 {
+  font-weight: bold;
+}
+
+.main-footer p {
+  line-height: 1.5;
+}
+/* footer styles */
